@@ -1,0 +1,23 @@
+server:
+  # 服务端口
+  port: 8080
+  servlet:
+    # 项目contextPath
+    context-path: /test
+  tomcat:
+    # tomcat的URI编码
+    uri-encoding: UTF-8
+    # tomcat最大线程数，默认为200
+    max-threads: 800
+    # Tomcat启动初始化的线程数，默认值25
+    min-spare-threads: 30
+
+# Spring配置
+spring:
+  # 环境 dev|pre|prod
+  profiles:
+    active: dev
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+
